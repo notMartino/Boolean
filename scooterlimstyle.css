@@ -1,0 +1,95 @@
+/* PS: 
+Prima di inviarvi questo file ho voluto finire tutto il corso gratuito, 
+nonstate cio' l'esercizio' è stato realizzato precedentemente e solo con i
+mezzi acquisiti fino a quel punto del corso(ad es. background nel Body, no VH/VW etc...).
+Inoltre ho utlizzato i selettori avanzati, in modo probabilmente eccessivo, semplicemente
+per mettere in pratica cià che è stato spiegato appena prima dell'esercizio. 
+
+Grazie per l'attenzione. */
+
+
+/* ---Proprietà Generali--- */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.container-nero{
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 1000px;
+    border-radius: 30px;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* ---Intestazione con logo e sigla--- */
+
+header > img{
+    width: 270px;
+}
+
+header > h1{
+    color: rgb(0, 221, 8);
+    font-size: 35px;
+}
+
+/* ---Barra di navigazione con bottoni--- */
+
+header > nav {
+    background-color: rgb(0, 221, 8);
+    width: 100%;
+}
+
+nav > input{
+    font-family: arial;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+/* ---Main con checkbox, user, posizione e carica--- */
+
+.sez-monopattino{
+    color: white;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.sez-monopattino > input[type="checkbox"], .sez-monopattino > h2{
+    display: inline-block;
+}
+
+/* freccia prima dell'indirizzo' */
+.sez-monopattino > p:before{
+    content: "\21A6";
+}
+
+
+/* ---Proprietà generiche barra carica--- */
+
+.sez-monopattino > div:last-child{
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* ---Proprietà specifiche barra carica--- */
+
+.sez-monopattino > div.orangebar{
+    background-color: orange;
+    width: 45%;
+}
+.sez-monopattino > div.greenbar{
+    background-color: green;
+    width: 70%;
+}
+.sez-monopattino > div.redbar{
+    background-color:firebrick;
+    width: 30%;
+}
